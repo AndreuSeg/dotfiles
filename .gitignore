@@ -1,12 +1,22 @@
 # Ignore everything
 *
 
-# Except this
+# Configs
 !.gitignore
 !.zshrc
+!.bashrc
 !.config
 !.config/alacritty
+!.config/alacritty/*
 !.config/neofetch
+!.config/neofetch/*
 !.config/ranger
+!.config/ranger/*
 !.config/nvim
+!.config/nvim/*
 !.config/starship.toml
+
+# Img
+!Imágenes
+!Imágenes/Fondos
+!Imágenes/*.png
