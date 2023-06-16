@@ -16,6 +16,8 @@
 !.config/nvim/*
 !.config/nvim/*/*
 !.config/starship.toml
+!.config/htop
+!.config/htop/*
 
 # Img
 !Imágenes
