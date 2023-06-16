@@ -18,6 +18,8 @@
 !.config/starship.toml
 !.config/htop
 !.config/htop/*
+!.fonts
+!.fonts/*
 
 # Img
 !Imágenes
