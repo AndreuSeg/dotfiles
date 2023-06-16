@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# Except this
+!.gitignore
+!.zshrc
+!.config
+!.config/alacritty
+!.config/neofetch
+!.config/ranger
+!.config/nvim
+!.config/starship.toml

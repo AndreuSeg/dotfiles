@@ -1,0 +1,61 @@
+scan_timeout = 30
+add_newline = false
+
+[username]
+style_user = 'cyan'
+format = '[$user]($style)'
+show_always = true
+disabled = false
+
+[line_break]
+disabled = false
+
+[cmd_duration]
+min_time = 100000000000000000
+format = "[$duration](yellow)"
+
+[container]
+format = '[$symbol \[$name\]]($style) '
+
+[directory]
+truncation_length = 3
+truncate_to_repo = false
+style = "cyan"
+
+[git_branch]
+format = "[$symbol$branch]($style)"
+symbol = " "
+
+[git_status]
+format = " "
+
+[python]
+format = '[$symbol$version ]($style)'
+symbol = " "
+
+[nodejs]
+format = "[$symbol$version ]($style)"
+symbol = " "
+
+[php]
+format = "[$symbol$version ]($style)"
+symbol = "🐘 "
+
+[java]
+format = "[$symbol$version ]($style)"
+symbol = " "
+
+[rust]
+format = "[$symbol$version ]($style)"
+symbol = "🦀 "
+
+[golang]
+format = "[$symbol$version ]($style)"
+symbol = " "
+
+[localip]
+ssh_only = false
+format = "-[$localipv4](purple) "
+disabled = false
+
+
