@@ -6,7 +6,7 @@ let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 " enable powerline fonts
 let g:airline_powerline_fonts = 1
 
-let g:airline_statusline_ontop=1
+let g:airline_statusline_ontop=0
 
 " Use alternative separators for the statusline of inactive windows
 " let g:airline_inactive_alt_sep=1

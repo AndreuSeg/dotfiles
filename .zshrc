@@ -131,8 +131,6 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
 
-# Zsh autosugestions
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # enable command-not-found if installed
 if [ -f /etc/zsh_command_not_found ]; then
@@ -141,6 +139,8 @@ fi
 
 alias startdatabase='sudo systemctl start mysql.service'
 alias stopdatabase='sudo systemctl stop mysql.service'
+alias dcup='docker-compose up -d'
+alias dcdown='docker-compose down'
 
 #starship
 eval "$(starship init zsh)"
@@ -157,4 +157,7 @@ fi
 export PATH=$PATH:/usr/local/go/bin
 
 # Zsh syntax highlight
-source /home/andreu/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Zsh autosuggestions
+source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
