@@ -5,6 +5,7 @@
 !.gitignore
 !.zshrc
 !.bashrc
+!.config
 !.config/alacritty
 !.config/neofetch
 !.config/ranger
