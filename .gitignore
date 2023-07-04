@@ -5,7 +5,6 @@
 !.gitignore
 !.zshrc
 !.bashrc
-!.config
 !.config/alacritty
 !.config/neofetch
 !.config/ranger
@@ -18,3 +17,6 @@
 !Imágenes
 !Imágenes/Fondos
 !Imágenes/*.png
+
+# Descargas
+!Descargas/*.deb
