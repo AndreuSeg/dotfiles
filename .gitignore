@@ -7,11 +7,16 @@
 !.bashrc
 !.config
 !.config/alacritty
+!.config/alacritty/*
 !.config/neofetch
+!.config/neofetch/*
 !.config/ranger
+!.config/ranger/*
 !.config/nvim
-!.config/starship.toml
+!.config/nvim/*
 !.config/htop
+!.config/htop/*
+!.config/starship.toml
 !.fonts
 
 # Img
@@ -20,4 +25,5 @@
 !Imágenes/*.png
 
 # Descargas
+!Descargas
 !Descargas/*.deb
