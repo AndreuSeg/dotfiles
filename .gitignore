@@ -4,22 +4,17 @@
 # Configs
 !.gitignore
 !.zshrc
+!.zsh-autosugestions
+!.zsh-syntax-highlighting
 !.bashrc
 !.config
 !.config/alacritty
-!.config/alacritty/*
 !.config/neofetch
-!.config/neofetch/*
 !.config/ranger
-!.config/ranger/*
 !.config/nvim
-!.config/nvim/*
-!.config/nvim/*/*
 !.config/starship.toml
 !.config/htop
-!.config/htop/*
 !.fonts
-!.fonts/*
 
 # Img
 !Imágenes
