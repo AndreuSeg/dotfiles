@@ -4,8 +4,6 @@
 # Configs
 !.gitignore
 !.zshrc
-!.zsh-autosugestions
-!.zsh-syntax-highlighting
 !.bashrc
 !.config
 !.config/alacritty

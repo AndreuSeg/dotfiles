@@ -1,1 +1,0 @@
-map <C-f>p :Prettier<CR>
