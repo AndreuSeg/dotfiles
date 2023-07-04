@@ -5,6 +5,7 @@
 !.gitignore
 !.zshrc
 !.bashrc
+!.profile
 !.config
 !.config/alacritty
 !.config/alacritty/*
@@ -19,6 +20,7 @@
 !.config/htop/*
 !.config/starship.toml
 !.fonts
+!install.sh
 
 # Img
 !Imágenes

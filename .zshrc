@@ -90,9 +90,6 @@ else
     neofetch
 fi
 
-# Go
-export PATH=$PATH:/usr/local/go/bin
-
 # Zsh syntax highlight
 source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
