@@ -7,7 +7,7 @@ sudo apt install php -y
 sudo apt install neofecth -y
 sudo apt install htop -y
 sudo apt install neovim -y
-sudo apt isntall ranger -y
+sudo apt install ranger -y
 ## Varios
 
 ## Composer
@@ -21,7 +21,7 @@ sudo mv composer.phar /usr/local/bin/composer
 
 ## Docker
 read -p "Esta docker instalado [y/n]" docker
-if [ $docker == y ]
+if [ $docker == y ]; then
 	echo "Ok"
 else
 	sudo apt update -y
@@ -34,7 +34,7 @@ fi
 
 ## VSCode
 read -p "Esta instalado VSCode [y/n]" code
-if [ $code == y ]
+if [ $code == y ]; then
 	echo "Ok"
 else
 	sudo apt-get install wget gpg -y
@@ -50,7 +50,7 @@ fi
 
 ## Brave
 read -p "Esta instalado brave? [y/n]" brave
-if [ $brave == y]
+if [ $brave == y]; then
 then
 	echo "Ok"
 else
@@ -73,6 +73,7 @@ wget https://go.dev/dl/go1.20.5.src.tar.gz
 sudo rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.5.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 go version
+sleep 2
 ## Go
 
 ## bat & lsd
