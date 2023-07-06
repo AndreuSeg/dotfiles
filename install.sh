@@ -51,7 +51,7 @@ fi
 
 ## Brave
 read -p "Esta instalado brave? [y/n]" brave
-if [ $brave == y]; then
+if [ $brave == y ]; then
 	echo "Ok"
 else
 	sudo apt install curl -y
@@ -71,7 +71,7 @@ rustup update stable
 
 ## Go
 wget https://go.dev/dl/go1.20.5.src.tar.gz
-sudo rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.5.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.5.src.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 sleep 2
 ## Go
@@ -80,13 +80,16 @@ sleep 2
 wget https://github.com/lsd-rs/lsd/releases/download/0.23.1/lsd_0.23.1_amd64.deb
 sudo pkg -i lsd_0.23.1_amd64.deb
 wget https://github.com/sharkdp/bat/releases/download/v0.23.0/bat_0.23.0_amd64.deb
-sudo dpkg -i bat_0.23.0_arm64.deb
+sudo dpkg -i bat_0.23.0_amd64.deb
 ## bat & lsd
 
 ## Alacritty
+git clone https://github.com/alacritty/alacritty.git
+cd alacritty
 sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3 -y
 cargo build --release
 infocmp alacritty
+sudo apt install alacritty -y
 ## Alacritty
 
 ## starship
@@ -101,4 +104,3 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ## Plugins ZSH
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.zsh-syntax-highlighting 
-
