@@ -5,6 +5,7 @@ sudo apt update -y
 ## Varios
 sudo apt install git -y
 sudo apt install php -y
+sudo apt install python3 -y
 sudo apt install neofecth -y
 sudo apt install htop -y
 sudo apt install neovim -y
@@ -73,12 +74,11 @@ rustup update stable
 wget https://go.dev/dl/go1.20.5.src.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.5.src.tar.gz
 export PATH=$PATH:/usr/local/go/bin
-sleep 2
 ## Go
 
 ## bat & lsd
 wget https://github.com/lsd-rs/lsd/releases/download/0.23.1/lsd_0.23.1_amd64.deb
-sudo pkg -i lsd_0.23.1_amd64.deb
+sudo dpkg -i lsd_0.23.1_amd64.deb
 wget https://github.com/sharkdp/bat/releases/download/v0.23.0/bat_0.23.0_amd64.deb
 sudo dpkg -i bat_0.23.0_amd64.deb
 ## bat & lsd
