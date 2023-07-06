@@ -1,6 +1,6 @@
 #! /bin/bash
 
-sudo apt uptdate -y
+sudo apt update -y
 ## Varios
 sudo apt install git -y
 sudo apt install php -y
@@ -8,7 +8,6 @@ sudo apt install neofecth -y
 sudo apt install htop -y
 sudo apt install neovim -y
 sudo apt isntall ranger -y
-
 ## Varios
 
 ## Composer
