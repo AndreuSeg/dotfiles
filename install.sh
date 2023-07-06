@@ -51,7 +51,6 @@ fi
 ## Brave
 read -p "Esta instalado brave? [y/n]" brave
 if [ $brave == y]; then
-then
 	echo "Ok"
 else
 	sudo apt install curl -y
