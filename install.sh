@@ -1,6 +1,7 @@
 #! /bin/bash
 
 sudo apt update -y
+
 ## Varios
 sudo apt install git -y
 sudo apt install php -y
@@ -63,6 +64,7 @@ fi
 
 ## Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
 rustup override set stable
 rustup update stable
 ## Rust
@@ -71,20 +73,18 @@ rustup update stable
 wget https://go.dev/dl/go1.20.5.src.tar.gz
 sudo rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.5.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
-go version
 sleep 2
 ## Go
 
 ## bat & lsd
 wget https://github.com/lsd-rs/lsd/releases/download/0.23.1/lsd_0.23.1_amd64.deb
-dpkg -i lsd_0.23.1_amd64.deb
-wget https://github.com/sharkdp/bat/releases/download/v0.23.0/bat_0.23.0_arm64.deb
-dpkg -i bat_0.23.0_arm64.deb
+sudo pkg -i lsd_0.23.1_amd64.deb
+wget https://github.com/sharkdp/bat/releases/download/v0.23.0/bat_0.23.0_amd64.deb
+sudo dpkg -i bat_0.23.0_arm64.deb
 ## bat & lsd
 
 ## Alacritty
-sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
-cd alacritty
+sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3 -y
 cargo build --release
 infocmp alacritty
 ## Alacritty
