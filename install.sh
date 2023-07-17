@@ -6,6 +6,7 @@ sudo apt update -y
 sudo apt install git -y
 sudo apt install php -y
 sudo apt install python3 -y
+sudo apt install golang-go -y
 sudo apt install neofecth -y
 sudo apt install htop -y
 sudo apt install neovim -y
@@ -76,10 +77,10 @@ fi
 ## Rust
 
 ## Go
-wget https://go.dev/dl/go1.20.5.src.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.5.src.tar.gz
-export PATH=$PATH:/usr/local/go/bin
-source $HOME/.profile
+# wget https://go.dev/dl/go1.20.5.src.tar.gz
+# sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.5.src.tar.gz
+# export PATH=$PATH:/usr/local/go/bin
+# source $HOME/.profile
 ## Go
 
 ## bat & lsd
