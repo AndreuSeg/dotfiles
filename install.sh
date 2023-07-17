@@ -27,7 +27,7 @@ if [ $docker == y ]; then
 	echo "Ok"
 else
 	sudo apt update -y
-	sudo apt install -y docker.io -y
+	sudo apt install docker.io -y
 	sudo systemctl enable docker --now
 	sudo usermod -aG docker $USER
 	sudo apt install docker-compose -y
@@ -35,7 +35,7 @@ fi
 ## Docker
 
 ## VSCode
-read -p "Esta instalado VSCode [y/n]" code
+read -p "Esta instalado VSCode? [y/n]" code
 if [ $code == y ]; then
 	echo "Ok"
 else
@@ -64,16 +64,22 @@ fi
 ## Brave
 
 ## Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source "$HOME/.cargo/env"
-rustup override set stable
-rustup update stable
+read -p "Esta instalado rust? [y/n]" rust
+if [ $rust == y ]; then
+	echo "Ok"
+else
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+	source "$HOME/.cargo/env"
+	rustup override set stable
+	rustup update stable
+fi
 ## Rust
 
 ## Go
 wget https://go.dev/dl/go1.20.5.src.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.5.src.tar.gz
 export PATH=$PATH:/usr/local/go/bin
+source $HOME/.profile
 ## Go
 
 ## bat & lsd
